@@ -1,0 +1,92 @@
+main {
+  display: flex;
+}
+
+/* Aside-part */
+aside {
+  width: 20%;
+  min-width: 160px;
+  height: 100vh;
+  background: #1e1f26;
+}
+aside,
+aside .tolink {
+  color: #fff;
+  font-size: large;
+}
+.nav {
+  position: relative;
+  width: 100%;
+  display: flex;
+  top: 10%;
+  align-items: center;
+}
+
+.nav-items {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-title {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 10px 15%;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #505c6e;
+}
+
+.nav-link {
+  display: block;
+  width: 100%;
+  padding: 10px 15%;
+  color: #fff;
+  font-weight: 700;
+  text-align: left;
+  line-height: 1;
+  transition: 0.3s ease;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.tolink {
+  transition: 0.3s;
+}
+.tolink:after {
+  color: rgb(164, 165, 167);
+  content: "\00bb";
+  display: block;
+  opacity: 0;
+  overflow: hidden;
+  width: 0;
+}
+
+.nav-link:hover {
+  transition: 0.3s;
+  background-color: #282d36;
+  border-right: 1px solid grey;
+  border-top-right-radius: 5%;
+  border-bottom-right-radius: 5%;
+}
+.nav-link:hover .tolink {
+  margin-left: 10%;
+}
+.nav-link:hover .tolink:after {
+  opacity: 1;
+  width: 20px;
+}
+
+.content {
+  width: 100%;
+  min-width: 80%;
+  max-width: 100%;
+  height: 100vh;
+  background-color: #c8cacf;
+}
+.content table {
+  width: 80%;
+  margin: 7% auto;
+}
